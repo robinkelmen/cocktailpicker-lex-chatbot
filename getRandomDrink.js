@@ -76,8 +76,7 @@ exports.handler = async (event) => {
 
     return {
         dialogAction: {
-            type: "Close",
-            fulfillmentState: "Fulfilled",
+            type: "ElicitIntent",
             message: {
                 contentType: "PlainText",
                 content: myMessage
